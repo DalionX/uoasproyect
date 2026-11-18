@@ -1,0 +1,371 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R] /Count 4 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 6391 >>
+stream
+.070588 .192157 .352941 rg /F2 20 Tf 1 0 0 1 56.69291 790 Tm (DOCUMENTACION - CLON UOAS) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 760 Tm (Copia de estudio de https://www.uoas.org.pe/ | HTML5 + CSS3 + JavaScript puro) Tj
+.113725 .305882 .537255 rg /F2 14 Tf 1 0 0 1 56.69291 731 Tm (1. Que se hizo y con que) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 707 Tm (\\225) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 707 Tm (Origen: se leyo la estructura real del sitio \(menu, secciones, textos y enlaces\).) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 691 Tm (\\225) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 691 Tm (Tecnologias: HTML5, CSS3 \(Grid, Flexbox, variables CSS y media queries\) y JavaScript) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 678 Tm (puro.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 662 Tm (\\225) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 662 Tm (Sin librerias ni frameworks: se abre con doble clic en index.html.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 646 Tm (\\225) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 646 Tm (Codigo comentado linea a linea con el prefijo L en los tres archivos.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 630 Tm (\\225) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 630 Tm (Imagenes: fotografias libres de Unsplash y dos logos SVG dibujados para el clon.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 614 Tm (\\225) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 614 Tm (No se copiaron las fotos, logos ni videos originales de la institucion.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 598 Tm (\\225) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 598 Tm (Se anadieron 12 paginas internas enlazadas desde el menu y el pie.) Tj
+.113725 .305882 .537255 rg /F2 14 Tf 1 0 0 1 56.69291 570 Tm (2. Mapa de archivos) Tj
+.113725 .305882 .537255 rg 56.69291 546 481.8898 16 re f
+1 1 1 rg /F2 8 Tf 1 0 0 1 62.69291 551 Tm (Archivo) Tj
+1 1 1 rg /F2 8 Tf 1 0 0 1 212.69290999999998 551 Tm (Rol) Tj
+1 1 1 rg /F2 8 Tf 1 0 0 1 282.69291 551 Tm (Contenido) Tj
+1 1 1 rg 56.69291 502 481.8898 28 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 521 Tm (index.html) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 521 Tm (HTML) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 521 Tm (Portada con 7 slides, aniversario, videos, mision, historia) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 511 Tm (y pie.) Tj
+.956863 .968627 .984314 rg 56.69291 484 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 493 Tm (nosotros.html) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 493 Tm (HTML) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 493 Tm (Historia, mision, vision, valores, objetivos y registros.) Tj
+1 1 1 rg 56.69291 466 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 475 Tm (sede-*.html \(7\)) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 475 Tm (HTML) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 475 Tm (Fichas de las siete sedes con servicios y datos.) Tj
+.956863 .968627 .984314 rg 56.69291 448 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 457 Tm (alianzas.html) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 457 Tm (HTML) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 457 Tm (Convenios, entidades aliadas y formas de sumarse.) Tj
+1 1 1 rg 56.69291 430 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 439 Tm (como-ayudar.html) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 439 Tm (HTML) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 439 Tm (Voluntariado, proyectos, donaciones y auspicio.) Tj
+.956863 .968627 .984314 rg 56.69291 412 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 421 Tm (galeria.html) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 421 Tm (HTML) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 421 Tm (Siete albumes con visor modal de imagenes.) Tj
+1 1 1 rg 56.69291 394 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 403 Tm (contacto.html) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 403 Tm (HTML) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 403 Tm (Datos institucionales y formulario de demostracion.) Tj
+.956863 .968627 .984314 rg 56.69291 376 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 385 Tm (assets/css/styles.css) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 385 Tm (CSS) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 385 Tm (Paleta, formas, rejillas y responsive. 996 lineas.) Tj
+1 1 1 rg 56.69291 358 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 367 Tm (assets/js/main.js) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 367 Tm (JS) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 367 Tm (Sliders, menu, modal, galeria y formulario. 135 lineas.) Tj
+.956863 .968627 .984314 rg 56.69291 340 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 349 Tm (assets/img/*.svg) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 349 Tm (SVG) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 349 Tm (Dos logos originales: cabecera y cabecera azul.) Tj
+1 1 1 rg 56.69291 322 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 331 Tm (DOCUMENTACION.md) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 331 Tm (MD) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 331 Tm (Indice por bloques, inventario y herramientas.) Tj
+.956863 .968627 .984314 rg 56.69291 304 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 313 Tm (DOCUMENTACION.pdf) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 313 Tm (PDF) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 313 Tm (Esta guia impresa con el cuadro de programas.) Tj
+.721569 .768627 .839216 RG .4 w 56.69291 304 481.8898 242 re S
+.721569 .768627 .839216 RG .4 w 56.69291 502 m 538.58271 502 l S
+.721569 .768627 .839216 RG .4 w 56.69291 484 m 538.58271 484 l S
+.721569 .768627 .839216 RG .4 w 56.69291 466 m 538.58271 466 l S
+.721569 .768627 .839216 RG .4 w 56.69291 448 m 538.58271 448 l S
+.721569 .768627 .839216 RG .4 w 56.69291 430 m 538.58271 430 l S
+.721569 .768627 .839216 RG .4 w 56.69291 412 m 538.58271 412 l S
+.721569 .768627 .839216 RG .4 w 56.69291 394 m 538.58271 394 l S
+.721569 .768627 .839216 RG .4 w 56.69291 376 m 538.58271 376 l S
+.721569 .768627 .839216 RG .4 w 56.69291 358 m 538.58271 358 l S
+.721569 .768627 .839216 RG .4 w 56.69291 340 m 538.58271 340 l S
+.721569 .768627 .839216 RG .4 w 56.69291 322 m 538.58271 322 l S
+.721569 .768627 .839216 RG .4 w 206.69290999999998 304 m 206.69290999999998 546 l S
+.721569 .768627 .839216 RG .4 w 276.69291 304 m 276.69291 546 l S
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.2756 841.8898] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 6008 >>
+stream
+.113725 .305882 .537255 rg /F2 14 Tf 1 0 0 1 56.69291 778 Tm (3. Inventario de imagenes) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 754 Tm (Fotografias servidas desde images.unsplash.com con ?auto=format&fit=crop&w=...&q=80.) Tj
+.113725 .305882 .537255 rg 56.69291 737 481.8898 16 re f
+1 1 1 rg /F2 8 Tf 1 0 0 1 62.69291 742 Tm (Imagen) Tj
+1 1 1 rg /F2 8 Tf 1 0 0 1 212.69290999999998 742 Tm (Tipo) Tj
+1 1 1 rg /F2 8 Tf 1 0 0 1 282.69291 742 Tm (Donde se usa) Tj
+1 1 1 rg 56.69291 703 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 712 Tm (logo-uoas.svg) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 712 Tm (SVG propio) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 712 Tm (Cabecera \(L16\) e icono de pestana \(L8\).) Tj
+.956863 .968627 .984314 rg 56.69291 685 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 694 Tm (logo-uoas-blanco.svg) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 694 Tm (SVG propio) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 694 Tm (Hero L51 y las 12 paginas internas L51.) Tj
+1 1 1 rg 56.69291 667 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 676 Tm (photo-1509062522246-3755977927d7) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 676 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 676 Tm (Hero 1 y 7; historico 1; Escuela Ninos; album 3.) Tj
+.956863 .968627 .984314 rg 56.69291 649 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 658 Tm (photo-1503676260728-1c00da094a0b) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 658 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 658 Tm (Hero 2; mision; historico 2; Nosotros; album 1.) Tj
+1 1 1 rg 56.69291 631 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 640 Tm (photo-1491013516836-7db643ee125a) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 640 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 640 Tm (Hero 3; video 1; historico 3.) Tj
+.956863 .968627 .984314 rg 56.69291 613 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 622 Tm (photo-1516627145497-ae6968895b74) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 622 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 622 Tm (Slides 2 y 6; video 2; Escuela Ninas; album 6.) Tj
+1 1 1 rg 56.69291 595 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 604 Tm (photo-1544776193-352d25ca82cd) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 604 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 604 Tm (Slides 3 y 7; mision; Cuna San Francisco; album 5.) Tj
+.956863 .968627 .984314 rg 56.69291 577 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 586 Tm (photo-1580582932707-520aed937b7b) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 586 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 586 Tm (Slide 4; foto decorativa; historico 6.) Tj
+1 1 1 rg 56.69291 559 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 568 Tm (photo-1571260899304-425eee4c7efc) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 568 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 568 Tm (Fondo del hero slide 5.) Tj
+.956863 .968627 .984314 rg 56.69291 541 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 550 Tm (photo-1503454537195-1dcabb73ffb9) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 550 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 550 Tm (Slide 4; detalle de la mision.) Tj
+1 1 1 rg 56.69291 523 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 532 Tm (photo-1596464716127-f2a82984de30) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 532 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 532 Tm (Slide 5; Hogar Transitorio; album 4.) Tj
+.956863 .968627 .984314 rg 56.69291 505 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 514 Tm (photo-1607453998774-d533f65dac99) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 514 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 514 Tm (Hero 6; Cuna Santa Rosa 04.) Tj
+1 1 1 rg 56.69291 487 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 496 Tm (photo-1587654780291-39c9404d746b) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 496 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 496 Tm (Nido Aurora y album 2.) Tj
+.956863 .968627 .984314 rg 56.69291 469 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 478 Tm (photo-1576091160399-112ba8d25d1d) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 478 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 478 Tm (Centro Integral Aurora y album 7.) Tj
+1 1 1 rg 56.69291 451 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 460 Tm (photo-1559027615-cd4628902d4a) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 460 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 282.69291 460 Tm (Foto de voluntariado en como-ayudar.html.) Tj
+.721569 .768627 .839216 RG .4 w 56.69291 451 481.8898 286 re S
+.721569 .768627 .839216 RG .4 w 56.69291 703 m 538.58271 703 l S
+.721569 .768627 .839216 RG .4 w 56.69291 685 m 538.58271 685 l S
+.721569 .768627 .839216 RG .4 w 56.69291 667 m 538.58271 667 l S
+.721569 .768627 .839216 RG .4 w 56.69291 649 m 538.58271 649 l S
+.721569 .768627 .839216 RG .4 w 56.69291 631 m 538.58271 631 l S
+.721569 .768627 .839216 RG .4 w 56.69291 613 m 538.58271 613 l S
+.721569 .768627 .839216 RG .4 w 56.69291 595 m 538.58271 595 l S
+.721569 .768627 .839216 RG .4 w 56.69291 577 m 538.58271 577 l S
+.721569 .768627 .839216 RG .4 w 56.69291 559 m 538.58271 559 l S
+.721569 .768627 .839216 RG .4 w 56.69291 541 m 538.58271 541 l S
+.721569 .768627 .839216 RG .4 w 56.69291 523 m 538.58271 523 l S
+.721569 .768627 .839216 RG .4 w 56.69291 505 m 538.58271 505 l S
+.721569 .768627 .839216 RG .4 w 56.69291 487 m 538.58271 487 l S
+.721569 .768627 .839216 RG .4 w 56.69291 469 m 538.58271 469 l S
+.721569 .768627 .839216 RG .4 w 206.69290999999998 451 m 206.69290999999998 737 l S
+.721569 .768627 .839216 RG .4 w 276.69291 451 m 276.69291 737 l S
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.2756 841.8898] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 4992 >>
+stream
+.113725 .305882 .537255 rg /F2 14 Tf 1 0 0 1 56.69291 778 Tm (4. Cuadro de programas y herramientas utilizadas) Tj
+.113725 .305882 .537255 rg 56.69291 754 481.8898 16 re f
+1 1 1 rg /F2 8 Tf 1 0 0 1 62.69291 759 Tm (Programa) Tj
+1 1 1 rg /F2 8 Tf 1 0 0 1 212.69290999999998 759 Tm (Para que se uso) Tj
+1 1 1 rg /F2 8 Tf 1 0 0 1 444.58290999999997 759 Tm (Alternativa) Tj
+1 1 1 rg 56.69291 720 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 729 Tm (OpenCode + Chromium) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 729 Tm (Inspeccionar DOM, estilos y tamanos originales.) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 729 Tm (DevTools \(F12\)) Tj
+.956863 .968627 .984314 rg 56.69291 692 481.8898 28 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 711 Tm (webfetch) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 711 Tm (Descargar el HTML y CSS originales y las 12 paginas) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 701 Tm (internas.) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 711 Tm (curl / navegador) Tj
+1 1 1 rg 56.69291 674 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 683 Tm (Visual Studio Code) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 683 Tm (Editar HTML, CSS y JavaScript.) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 683 Tm (Notepad++, Sublime) Tj
+.956863 .968627 .984314 rg 56.69291 656 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 665 Tm (HTML5) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 665 Tm (Estructura del contenido.) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 665 Tm (-) Tj
+1 1 1 rg 56.69291 638 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 647 Tm (CSS3) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 647 Tm (Colores, formas y diseno responsive.) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 647 Tm (-) Tj
+.956863 .968627 .984314 rg 56.69291 620 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 629 Tm (JavaScript DOM) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 629 Tm (Sliders, menu movil y modal.) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 629 Tm (-) Tj
+1 1 1 rg 56.69291 602 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 611 Tm (SVG \(XML\)) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 611 Tm (Logos e iconos originales.) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 611 Tm (Inkscape) Tj
+.956863 .968627 .984314 rg 56.69291 584 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 593 Tm (Unsplash) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 593 Tm (Fotografias libres de derechos.) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 593 Tm (Pexels, Pixabay) Tj
+1 1 1 rg 56.69291 566 481.8898 18 re f
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 62.69291 575 Tm (Python http.server) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 212.69290999999998 575 Tm (Servir la carpeta por HTTP \(opcional\).) Tj
+0 0 0 rg /F1 8 Tf 1 0 0 1 444.58290999999997 575 Tm (Live Server) Tj
+.721569 .768627 .839216 RG .4 w 56.69291 566 481.8898 188 re S
+.721569 .768627 .839216 RG .4 w 56.69291 720 m 538.58271 720 l S
+.721569 .768627 .839216 RG .4 w 56.69291 692 m 538.58271 692 l S
+.721569 .768627 .839216 RG .4 w 56.69291 674 m 538.58271 674 l S
+.721569 .768627 .839216 RG .4 w 56.69291 656 m 538.58271 656 l S
+.721569 .768627 .839216 RG .4 w 56.69291 638 m 538.58271 638 l S
+.721569 .768627 .839216 RG .4 w 56.69291 620 m 538.58271 620 l S
+.721569 .768627 .839216 RG .4 w 56.69291 602 m 538.58271 602 l S
+.721569 .768627 .839216 RG .4 w 56.69291 584 m 538.58271 584 l S
+.721569 .768627 .839216 RG .4 w 206.69290999999998 566 m 206.69290999999998 754 l S
+.721569 .768627 .839216 RG .4 w 438.58290999999997 566 m 438.58290999999997 754 l S
+.113725 .305882 .537255 rg /F2 14 Tf 1 0 0 1 56.69291 540 Tm (5. Flujo de trabajo) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 516 Tm (1.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 516 Tm (Analizar la web original en el navegador y extraer sus estilos reales.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 500 Tm (2.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 500 Tm (Sustituir fotos por imagenes libres y redibujar los logos en SVG.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 484 Tm (3.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 484 Tm (Escribir HTML, CSS y JS con un comentario por linea.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 468 Tm (4.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 468 Tm (Verificar sliders, menu, modal y vista responsive.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 452 Tm (5.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 452 Tm (Extraer las 12 URLs internas y crear una pagina local para cada una.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 436 Tm (6.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 436 Tm (Conectar menu y pie con rutas reales y anadir estado activo.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 56.69291 420 Tm (7.) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 420 Tm (Comprobar las 13 paginas: sin errores de consola y con enlaces internos.) Tj
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.2756 841.8898] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 4605 >>
+stream
+.113725 .305882 .537255 rg /F2 14 Tf 1 0 0 1 56.69291 778 Tm (6. Guia rapida de modificacion) Tj
+.113725 .305882 .537255 rg 56.69291 754 481.8898 16 re f
+1 1 1 rg /F2 8 Tf 1 0 0 1 62.69291 759 Tm (Quieres cambiar) Tj
+1 1 1 rg /F2 8 Tf 1 0 0 1 262.69291 759 Tm (Ve a) Tj
+1 1 1 rg 56.69291 720 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 729 Tm (Los colores) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 729 Tm (styles.css L1-L11) Tj
+.956863 .968627 .984314 rg 56.69291 702 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 711 Tm (El texto de la mision) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 711 Tm (index.html L130) Tj
+1 1 1 rg 56.69291 684 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 693 Tm (Las fotos del hero) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 693 Tm (index.html L49, L54, L63, L72, L81, L90, L99) Tj
+.956863 .968627 .984314 rg 56.69291 666 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 675 Tm (La velocidad de los sliders) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 675 Tm (index.html L46 \(5000\) y L150 \(4000\)) Tj
+1 1 1 rg 56.69291 648 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 657 Tm (El listado de sedes) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 657 Tm (index.html L28-L34 y L170-L176) Tj
+.956863 .968627 .984314 rg 56.69291 630 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 639 Tm (El pie de pagina) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 639 Tm (index.html L181-L211 / styles.css L472-L525) Tj
+1 1 1 rg 56.69291 612 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 621 Tm (El diseno en movil) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 621 Tm (styles.css L552-L627) Tj
+.956863 .968627 .984314 rg 56.69291 594 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 603 Tm (El logo) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 603 Tm (Editar los dos SVG de assets/img/) Tj
+1 1 1 rg 56.69291 576 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 585 Tm (Los textos internos) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 585 Tm (nosotros.html L54-L162 / sede-*.html L49-L119) Tj
+.956863 .968627 .984314 rg 56.69291 558 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 567 Tm (Los convenios) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 567 Tm (alianzas.html L68-L123) Tj
+1 1 1 rg 56.69291 540 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 549 Tm (Las formas de ayuda) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 549 Tm (como-ayudar.html L64-L119) Tj
+.956863 .968627 .984314 rg 56.69291 522 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 531 Tm (Los albumes) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 531 Tm (galeria.html L60-L110) Tj
+1 1 1 rg 56.69291 504 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 513 Tm (El formulario) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 513 Tm (contacto.html L62-L74 / main.js L119-L135) Tj
+.956863 .968627 .984314 rg 56.69291 486 481.8898 18 re f
+0 0 0 rg /F1 8 Tf 1 0 0 1 62.69291 495 Tm (Paginas internas) Tj
+.541176 .168627 .886275 rg /F3 8 Tf 1 0 0 1 262.69291 495 Tm (styles.css L628-L996) Tj
+.721569 .768627 .839216 RG .4 w 56.69291 486 481.8898 268 re S
+.721569 .768627 .839216 RG .4 w 56.69291 720 m 538.58271 720 l S
+.721569 .768627 .839216 RG .4 w 56.69291 702 m 538.58271 702 l S
+.721569 .768627 .839216 RG .4 w 56.69291 684 m 538.58271 684 l S
+.721569 .768627 .839216 RG .4 w 56.69291 666 m 538.58271 666 l S
+.721569 .768627 .839216 RG .4 w 56.69291 648 m 538.58271 648 l S
+.721569 .768627 .839216 RG .4 w 56.69291 630 m 538.58271 630 l S
+.721569 .768627 .839216 RG .4 w 56.69291 612 m 538.58271 612 l S
+.721569 .768627 .839216 RG .4 w 56.69291 594 m 538.58271 594 l S
+.721569 .768627 .839216 RG .4 w 56.69291 576 m 538.58271 576 l S
+.721569 .768627 .839216 RG .4 w 56.69291 558 m 538.58271 558 l S
+.721569 .768627 .839216 RG .4 w 56.69291 540 m 538.58271 540 l S
+.721569 .768627 .839216 RG .4 w 56.69291 522 m 538.58271 522 l S
+.721569 .768627 .839216 RG .4 w 56.69291 504 m 538.58271 504 l S
+.721569 .768627 .839216 RG .4 w 256.69291 486 m 256.69291 754 l S
+.113725 .305882 .537255 rg /F2 14 Tf 1 0 0 1 56.69291 460 Tm (7. Aviso) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 436 Tm (Este clon se realizo con fines de estudio y practica. No reproduce los videos ni los archivos) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 423 Tm (multimedia originales de la institucion. Para publicarlo, sustituye los contenidos por propios) Tj
+0 0 0 rg /F1 9.5 Tf 1 0 0 1 69.69291 410 Tm (o solicita autorizacion.) Tj
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.2756 841.8898] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+xref
+0 14
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000135 00000 n 
+0000000232 00000 n 
+0000000334 00000 n 
+0000000429 00000 n 
+0000006871 00000 n 
+0000007027 00000 n 
+0000013086 00000 n 
+0000013242 00000 n 
+0000018286 00000 n 
+0000018444 00000 n 
+0000023101 00000 n 
+trailer
+<< /Size 14 /Root 1 0 R >>
+startxref
+23259
+%%EOF

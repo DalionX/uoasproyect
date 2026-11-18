@@ -1,0 +1,734 @@
+/* L1: defino variables de color para poder cambiar toda la web desde un solo sitio */
+:root { /* L2: selector de la raíz del documento */
+  --azul: #0560a9; /* L3: azul principal de enlaces y botones del original */
+  --azul-medio: #2058A5; /* L4: azul del pie de página */
+  --azul-oscuro: #1E5198; /* L5: azul de la franja inferior */
+  --texto: #185587; /* L6: color de texto general */
+  --gris: #718390; /* L7: gris de párrafos y títulos secundarios */
+  --naranja: #F4971B; /* L8: naranja de hover y detalles */
+  --linea: #e1e7ec; /* L9: color de separadores finos */
+  --blanco: #fff; /* L10: blanco puro */
+} /* L11: cierra las variables */
+
+* { /* L12: selecciono todos los elementos */
+  box-sizing: border-box; /* L13: el padding y borde cuentan dentro del ancho declarado */
+  margin: 0; /* L14: elimino márgenes por defecto del navegador */
+  padding: 0; /* L15: elimino paddings por defecto del navegador */
+} /* L16: cierra el reset */
+
+html { /* L17: elemento raíz */
+  scroll-behavior: smooth; /* L18: desplazamiento suave al pulsar los enlaces internos */
+} /* L19: cierra html */
+
+body { /* L20: cuerpo de la página */
+  font-family: Inter, Arial, sans-serif; /* L21: tipografía del original */
+  color: var(--texto); /* L22: color de texto heredado */
+  background: var(--blanco); /* L23: fondo blanco */
+  line-height: 1.5; /* L24: interlineado base */
+  padding-top: 80px; /* L25: espacio para la cabecera fija */
+} /* L26: cierra body */
+
+img, svg { /* L27: imágenes y vectores */
+  display: block; /* L28: evito el espacio extra que dejan las imágenes en línea */
+  max-width: 100%; /* L29: nunca se salen de su contenedor */
+} /* L30: cierra imágenes */
+
+a { /* L31: enlaces */
+  color: inherit; /* L32: heredan el color del padre */
+  text-decoration: none; /* L33: quito el subrayado por defecto */
+} /* L34: cierra enlaces */
+
+button { /* L35: botones */
+  font: inherit; /* L36: usan la misma tipografía que el resto */
+  cursor: pointer; /* L37: el cursor cambia a mano al pasar encima */
+  background: none; /* L38: sin fondo por defecto */
+  border: 0; /* L39: sin borde por defecto */
+} /* L40: cierra botones */
+
+.container { /* L41: contenedor centrado reutilizable */
+  width: 100%; /* L42: ocupa todo el ancho disponible */
+  max-width: 1200px; /* L43: ancho máximo en pantallas medianas */
+  margin: 0 auto; /* L44: lo centra horizontalmente */
+  padding: 0 15px; /* L45: margen lateral de seguridad */
+} /* L46: cierra container */
+
+/* L47: CABECERA fija de 80px */
+.site-header { /* L48: barra superior */
+  position: fixed; /* L49: permanece visible al hacer scroll */
+  inset: 0 0 auto; /* L50: arriba, izquierda y derecha a cero */
+  height: 80px; /* L51: altura idéntica a la original */
+  z-index: 100; /* L52: se dibuja por encima del resto */
+  background: rgba(255,255,255,.95); /* L53: blanco semitransparente */
+  transition: box-shadow .3s ease; /* L54: animación de sombra al hacer scroll */
+} /* L55: cierra la cabecera */
+.site-header.is-scrolled { /* L56: clase que añade JavaScript al desplazarse */
+  box-shadow: 0 2px 14px rgba(17,33,45,.12); /* L57: sombra ligera */
+} /* L58: cierra el estado */
+.header-inner { /* L59: contenido interno de la cabecera */
+  height: 100%; /* L60: ocupa toda la altura de la barra */
+  display: flex; /* L61: coloca logo y menú en fila */
+  align-items: center; /* L62: los centra verticalmente */
+  justify-content: space-between; /* L63: logo a la izquierda, menú a la derecha */
+} /* L64: cierra el interno */
+.brand img { /* L65: logo */
+  height: 70px; /* L66: misma altura que el original */
+  width: auto; /* L67: mantiene la proporción */
+} /* L68: cierra logo */
+.menu { /* L69: lista del menú */
+  display: flex; /* L70: elementos en fila */
+  align-items: center; /* L71: alineados verticalmente */
+  gap: 26px; /* L72: separación entre ítems */
+  list-style: none; /* L73: sin viñetas */
+} /* L74: cierra el menú */
+.menu > li > a, /* L75: enlaces de primer nivel */
+.submenu-toggle { /* L76: botón del desplegable */
+  font-family: Arial, sans-serif; /* L77: tipografía original del menú */
+  font-size: 13px; /* L78: tamaño similar al original */
+  font-weight: 600; /* L79: negrita */
+  text-transform: uppercase; /* L80: el original muestra el menú en mayúsculas */
+  letter-spacing: .4px; /* L81: pequeño espaciado entre letras */
+  color: var(--texto); /* L82: color azul */
+  transition: color .2s ease; /* L83: transición al pasar el ratón */
+} /* L84: cierra enlaces */
+.menu > li > a:hover, /* L85: hover de enlaces */
+.submenu-toggle:hover { /* L86: hover del desplegable */
+  color: var(--naranja); /* L87: el original usa naranja al resaltar */
+} /* L88: cierra hover */
+.has-submenu { /* L89: contenedor del submenú */
+  position: relative; /* L90: referencia para colocar el desplegable */
+} /* L91: cierra contenedor */
+.submenu { /* L92: lista desplegable */
+  position: absolute; /* L93: flot bajo el botón Sedes */
+  top: 100%; /* L94: justo debajo del ítem */
+  left: 0; /* L95: alineado a la izquierda del ítem */
+  min-width: 260px; /* L96: ancho suficiente para los nombres */
+  padding: 10px 0; /* L97: espacio interior vertical */
+  background: var(--blanco); /* L98: fondo blanco */
+  box-shadow: 0 6px 18px rgba(17,33,45,.15); /* L99: sombra del desplegable */
+  list-style: none; /* L100: sin viñetas */
+  opacity: 0; /* L101: oculto por defecto */
+  visibility: hidden; /* L102: no recibe clics mientras está oculto */
+  transform: translateY(-8px); /* L103: desplazado arriba para animar */
+  transition: .2s ease; /* L104: animación de aparición */
+} /* L105: cierra desplegable */
+.has-submenu:hover .submenu, /* L106: se abre al pasar el ratón */
+.has-submenu.is-open .submenu { /* L107: o al pulsar en móvil */
+  opacity: 1; /* L108: visible */
+  visibility: visible; /* L109: interactivo */
+  transform: translateY(0); /* L110: vuelve a su sitio */
+} /* L111: cierra apertura */
+.submenu a { /* L112: enlaces del desplegable */
+  display: block; /* L113: ocupan toda la línea */
+  padding: 9px 18px; /* L114: espacio interior */
+  font-family: Arial, sans-serif; /* L115: tipografía original */
+  font-size: 13px; /* L116: tamaño de texto */
+  color: var(--texto); /* L117: color azul */
+} /* L118: cierra enlaces del desplegable */
+.submenu a:hover { /* L119: hover de las sedes */
+  background: #f3f7fb; /* L120: fondo muy claro */
+  color: var(--azul); /* L121: texto azul intenso */
+} /* L122: cierra hover */
+.menu-toggle { /* L123: hamburguesa de móvil */
+  display: none; /* L124: oculta en escritorio */
+  width: 34px; /* L125: ancho del botón */
+  height: 30px; /* L126: alto del botón */
+  position: relative; /* L127: referencia para las líneas */
+} /* L128: cierra hamburguesa */
+.menu-toggle span { /* L129: cada línea de la hamburguesa */
+  position: absolute; /* L130: se coloca de forma independiente */
+  left: 0; /* L131: alineada a la izquierda */
+  width: 100%; /* L132: ocupa el botón */
+  height: 3px; /* L133: grosor de la línea */
+  background: var(--texto); /* L134: color azul */
+  transition: .25s ease; /* L135: animación de transformación */
+} /* L136: cierra líneas */
+.menu-toggle span:nth-child(1) { top: 3px; } /* L137: primera línea arriba */
+.menu-toggle span:nth-child(2) { top: 13px; } /* L138: segunda línea al centro */
+.menu-toggle span:nth-child(3) { top: 23px; } /* L139: tercera línea abajo */
+.menu-toggle.is-open span:nth-child(1) { top: 13px; transform: rotate(45deg); } /* L140: se convierte en la X */
+.menu-toggle.is-open span:nth-child(2) { opacity: 0; } /* L141: la línea central desaparece */
+.menu-toggle.is-open span:nth-child(3) { top: 13px; transform: rotate(-45deg); } /* L142: otra rama de la X */
+
+/* L143: HERO */
+.hero { /* L144: slider principal */
+  position: relative; /* L145: referencia para los slides absolutos */
+  height: 880px; /* L146: altura declarada por el original en escritorio */
+  margin-top: 0; /* L147: el body ya reservó los 80px de la cabecera */
+  overflow: hidden; /* L148: recorta los slides que entran desde fuera */
+  background: var(--azul-oscuro); /* L149: color de reserva mientras cargan las fotos */
+} /* L150: cierra hero */
+.slides, /* L151: contenedor de diapositivas */
+.hero .slides { /* L152: regla específica del hero */
+  position: relative; /* L153: contexto de posicionamiento */
+  width: 100%; /* L154: ancho completo */
+  height: 100%; /* L155: altura completa */
+} /* L156: cierra contenedor */
+.slide { /* L157: cada diapositiva */
+  position: absolute; /* L158: todas se superponen */
+  inset: 0; /* L159: ocupan todo el hero */
+  display: flex; /* L160: flex para centrar el contenido */
+  align-items: center; /* L161: centrado vertical */
+  justify-content: center; /* L162: centrado horizontal */
+  background-image: var(--slide-bg); /* L163: foto definida en el atributo style del HTML */
+  background-size: cover; /* L164: cubre todo el slide */
+  background-position: center; /* L165: recorta por el centro */
+  opacity: 0; /* L166: invisible por defecto */
+  transform: translateX(100%); /* L167: entra desde la derecha */
+  transition: transform .9s ease, opacity .9s ease; /* L168: misma velocidad que el original */
+} /* L169: cierra slide */
+.slide.is-active { /* L170: diapositiva visible */
+  opacity: 1; /* L171: totalmente opaca */
+  transform: translateX(0); /* L172: en su posición */
+  z-index: 2; /* L173: por encima de las demás */
+} /* L174: cierra activa */
+.slide-overlay { /* L175: velo oscuro */
+  position: absolute; /* L176: cubre todo el slide */
+  inset: 0; /* L177: mismo tamaño que el slide */
+  background: linear-gradient(182deg, rgba(0,0,0,.36) 45%, rgba(0,0,0,.61) 77%); /* L178: degradado original */
+} /* L179: cierra velo */
+.slide-logo { /* L180: logo del primer slide */
+  position: relative; /* L181: por encima del velo */
+  width: 595px; /* L182: ancho original */
+  max-width: 70%; /* L183: se adapta a pantallas pequeñas */
+  height: auto; /* L184: mantiene proporción */
+} /* L185: cierra logo */
+.slide-content { /* L186: texto, foto y botón */
+  position: relative; /* L187: por encima del velo */
+  z-index: 1; /* L188: asegura que se vea */
+  display: flex; /* L189: apila los elementos */
+  flex-direction: column; /* L190: uno debajo de otro */
+  align-items: center; /* L191: centrados */
+  text-align: center; /* L192: texto centrado */
+  padding: 0 20px; /* L193: margen lateral */
+} /* L194: cierra contenido */
+.slide-title { /* L195: título de cada sede */
+  font-family: Arial, sans-serif; /* L196: tipografía del original */
+  font-size: 60px; /* L197: tamaño original en escritorio */
+  line-height: 72px; /* L198: interlineado original */
+  font-weight: 700; /* L199: negrita */
+  color: var(--blanco); /* L200: texto blanco */
+  margin-bottom: 0; /* L201: la foto va justo debajo */
+} /* L202: cierra título */
+.slide-photo { /* L203: foto circular de la sede */
+  width: 397px; /* L204: diámetro original */
+  height: 397px; /* L205: diámetro original */
+  border-radius: 50%; /* L206: recorte circular */
+  border: 8px solid rgba(255,255,255,.85); /* L207: borde blanco */
+  overflow: hidden; /* L208: recorta la foto dentro del círculo */
+  margin: 10px 0 24px; /* L209: separación del título y del botón */
+} /* L210: cierra foto */
+.slide-photo img { /* L211: imagen dentro del círculo */
+  width: 100%; /* L212: llena el círculo */
+  height: 100%; /* L213: llena el círculo */
+  object-fit: cover; /* L214: recorta sin deformar */
+} /* L215: cierra imagen */
+.slide-button { /* L216: botón "Ver más..." */
+  display: inline-block; /* L217: se comporta como bloque en línea */
+  background: var(--azul); /* L218: fondo azul original */
+  color: var(--blanco); /* L219: texto blanco */
+  font-family: 'Open Sans', Arial, sans-serif; /* L220: tipografía original del botón */
+  font-size: 16px; /* L221: tamaño original */
+  font-weight: 700; /* L222: negrita */
+  padding: 19px 51px; /* L223: padding original en escritorio */
+  border-radius: 10px; /* L224: esquinas redondeadas */
+  transition: .3s; /* L225: animación de hover */
+} /* L226: cierra botón */
+.slide-button:hover { /* L227: hover del botón */
+  background: var(--naranja); /* L228: el original cambia a naranja */
+  color: var(--azul); /* L229: y el texto pasa a azul */
+} /* L230: cierra hover */
+.slider-dots { /* L231: puntos verticales de navegación */
+  position: absolute; /* L232: flotan sobre el hero */
+  right: 235px; /* L233: posición original en pantallas grandes */
+  top: 50%; /* L234: centrados verticalmente */
+  transform: translateY(-50%); /* L235: ajuste fino del centrado */
+  display: flex; /* L236: los apilamos */
+  flex-direction: column; /* L237: en columna */
+  gap: 12px; /* L238: separación entre puntos */
+  list-style: none; /* L239: sin viñetas */
+  z-index: 5; /* L240: por encima del contenido */
+} /* L241: cierra puntos */
+.slider-dots button { /* L242: cada punto */
+  width: 14px; /* L243: diámetro */
+  height: 14px; /* L244: diámetro */
+  border: 2px solid var(--blanco); /* L245: borde blanco */
+  border-radius: 50%; /* L246: forma circular */
+  background: transparent; /* L247: interior transparente */
+  transition: .25s; /* L248: animación */
+} /* L249: cierra punto */
+.slider-dots .is-active button { /* L250: punto activo */
+  background: var(--naranja); /* L251: relleno naranja */
+  border-color: var(--naranja); /* L252: borde naranja */
+  transform: scale(1.35); /* L253: ligeramente más grande */
+} /* L254: cierra punto activo */
+
+/* L255: ANIVERSARIO */
+.anniversary { /* L256: sección del título central */
+  padding: 75px 0; /* L257: padding original en escritorio */
+  text-align: center; /* L258: texto centrado */
+} /* L259: cierra aniversario */
+.anniversary h1 { /* L260: título */
+  font-family: Arial, sans-serif; /* L261: tipografía original */
+  font-size: 40px; /* L262: tamaño original */
+  font-weight: 700; /* L263: negrita */
+  line-height: 1.25; /* L264: interlineado */
+  color: var(--texto); /* L265: color azul */
+} /* L266: cierra título */
+
+/* L267: VIDEOS */
+.videos { /* L268: sección de los dos videos */
+  padding: 0 0 75px; /* L269: deja espacio abajo como el original */
+} /* L270: cierra videos */
+.video-grid { /* L271: rejilla de dos columnas */
+  display: grid; /* L272: usa CSS Grid */
+  grid-template-columns: repeat(2, 1fr); /* L273: dos columnas iguales */
+  gap: 30px; /* L274: separación entre videos */
+} /* L275: cierra rejilla */
+.video-card, /* L276: tarjeta de video */
+.mission-main { /* L277: imagen principal de la misión */
+  position: relative; /* L278: referencia para el botón de play */
+  background-size: cover; /* L279: la foto cubre toda la tarjeta */
+  background-position: center; /* L280: recorte centrado */
+  aspect-ratio: 16 / 9; /* L281: misma proporción que los iframes originales */
+  display: grid; /* L282: centra el botón */
+  place-items: center; /* L283: centrado horizontal y vertical */
+  overflow: hidden; /* L284: recorta cualquier desbordamiento */
+} /* L285: cierra tarjetas */
+.play-button { /* L286: botón triangular de play */
+  width: 60px; /* L287: tamaño mediano para los videos */
+  height: 60px; /* L288: tamaño mediano */
+  border-radius: 50%; /* L289: círculo */
+  background: rgba(5,96,169,.9); /* L290: azul semitransparente */
+  color: var(--blanco); /* L291: color blanco */
+  font-size: 20px; /* L292: tamaño del triángulo */
+  display: grid; /* L293: centra el contenido */
+  place-items: center; /* L294: centrado */
+  transition: transform .3s, background .3s; /* L295: animaciones */
+} /* L296: cierra play */
+.play-button:hover { /* L297: hover del play */
+  transform: scale(1.1); /* L298: crece un poco */
+  background: var(--naranja); /* L299: pasa a naranja */
+} /* L300: cierra hover */
+.play-button--large { /* L301: botón grande de la misión */
+  width: 73px; /* L302: tamaño original */
+  height: 73px; /* L303: tamaño original */
+  font-size: 26px; /* L304: triángulo más grande */
+  background: var(--blanco); /* L305: fondo blanco */
+  color: var(--azul); /* L306: triángulo azul */
+} /* L307: cierra play grande */
+
+/* L308: MISIÓN */
+.mission { /* L309: sección con fondo gris claro */
+  background: rgba(222,222,222,.35); /* L310: color original */
+  padding: 110px 0 170px; /* L311: padding original en escritorio */
+  overflow: hidden; /* L312: evita que las imágenes absolutas generen scroll lateral */
+} /* L313: cierra misión */
+.mission-grid { /* L314: rejilla de 12 columnas */
+  display: grid; /* L315: activa Grid */
+  grid-template-columns: 4fr 8fr; /* L316: 4 columnas de texto y 8 de imagen */
+  gap: 0; /* L317: sin separación, las imágenes se solapan a propósito */
+  position: relative; /* L318: referencia para las imágenes absolutas */
+} /* L319: cierra rejilla */
+.mission-copy { /* L320: columna del texto */
+  padding-right: 25%; /* L321: el original reservaba el 25% de la columna */
+  margin-bottom: 70px; /* L322: espacio inferior original */
+  z-index: 3; /* L323: por encima de las imágenes */
+} /* L324: cierra texto */
+.mission-copy h3 { /* L325: título de la misión */
+  font-family: Arial, sans-serif; /* L326: tipografía original */
+  font-size: 40px; /* L327: tamaño original */
+  line-height: 55px; /* L328: interlineado original */
+  font-weight: 700; /* L329: negrita */
+  margin-bottom: 17px; /* L330: margen original */
+  color: var(--texto); /* L331: color azul */
+} /* L332: cierra título */
+.mission-copy p { /* L333: párrafo de la misión */
+  color: var(--gris); /* L334: gris original */
+  line-height: 30px; /* L335: interlineado original */
+  font-size: 16px; /* L336: tamaño base */
+} /* L337: cierra párrafo */
+.mission-visual { /* L338: columna de las imágenes */
+  position: relative; /* L339: referencia para las imágenes superpuestas */
+  min-height: 520px; /* L340: altura suficiente para el collage */
+} /* L341: cierra visual */
+.mission-main { /* L342: foto grande con borde blanco */
+  width: 75%; /* L343: ocupa el 75% de la columna */
+  margin-left: auto; /* L344: alineada a la derecha */
+  min-height: 430px; /* L345: altura de la foto */
+  border-top: 15px solid var(--blanco); /* L346: borde superior blanco original */
+  border-bottom: 15px solid var(--blanco); /* L347: borde inferior blanco original */
+  aspect-ratio: auto; /* L348: anulo la proporción 16:9 de las tarjetas de video */
+} /* L349: cierra foto grande */
+.mission-accent { /* L350: foto pequeña superior */
+  position: absolute; /* L351: flota sobre la columna */
+  left: 45%; /* L352: posición aproximada a la original */
+  top: -103px; /* L353: sobresale por encima del bloque */
+  width: 106px; /* L354: tamaño original */
+  height: 106px; /* L355: tamaño original */
+  object-fit: cover; /* L356: recorte sin deformar */
+  z-index: 1; /* L357: detrás del texto */
+} /* L358: cierra foto pequeña */
+.mission-overlap { /* L359: foto superpuesta a la izquierda */
+  position: absolute; /* L360: flota sobre la imagen grande */
+  left: -55px; /* L361: desborda hacia la columna del texto */
+  top: 194px; /* L362: altura original */
+  width: 43%; /* L363: ancho original */
+  height: 262px; /* L364: alto original */
+  object-fit: cover; /* L365: recorte sin deformar */
+  border: 15px solid var(--blanco); /* L366: marco blanco original */
+  z-index: 3; /* L367: por encima de la foto grande */
+} /* L368: cierra foto superpuesta */
+
+/* L369: HISTORIA Y SEDES */
+.history { /* L370: sección institucional */
+  padding: 50px 0 110px; /* L371: padding original en escritorio */
+} /* L372: cierra historia */
+.history-head { /* L373: cabecera centrada */
+  text-align: center; /* L374: centra título y texto */
+} /* L375: cierra cabecera */
+.history-head h2 { /* L376: título */
+  font-family: Arial, sans-serif; /* L377: tipografía original */
+  font-size: 40px; /* L378: tamaño original */
+  line-height: 50px; /* L379: interlineado original */
+  font-weight: 700; /* L380: negrita */
+  color: var(--texto); /* L381: azul */
+  margin-bottom: 20px; /* L382: margen original */
+} /* L383: cierra título */
+.history-head p { /* L384: párrafo histórico */
+  width: 48%; /* L385: el original usaba el 48% del contenedor */
+  margin: 0 auto 40px; /* L386: centrado y espacio inferior */
+  color: var(--gris); /* L387: gris original */
+  line-height: 30px; /* L388: interlineado original */
+  letter-spacing: .2px; /* L389: espaciado original */
+} /* L390: cierra párrafo */
+.history-grid { /* L391: rejilla de dos columnas */
+  display: grid; /* L392: activa Grid */
+  grid-template-columns: repeat(2, 1fr); /* L393: mitad imagen, mitad listado */
+  gap: 60px; /* L394: separación entre columnas */
+  position: relative; /* L395: referencia para la foto decorativa */
+} /* L396: cierra rejilla */
+.history-media { /* L397: columna de la imagen */
+  position: relative; /* L398: referencia para la decoración */
+} /* L399: cierra columna */
+.history-decor { /* L400: foto vertical decorativa */
+  position: absolute; /* L401: flota a la izquierda */
+  left: -275px; /* L402: posición original en escritorio */
+  top: -90px; /* L403: sobresale por arriba */
+  width: 254px; /* L404: ancho original */
+  height: 367px; /* L405: alto original */
+  object-fit: cover; /* L406: recorte sin deformar */
+  z-index: 1; /* L407: detrás del slider */
+} /* L408: cierra decoración */
+.mini-slider { /* L409: slider de seis fotos */
+  position: relative; /* L410: contexto para los slides */
+  border: 20px solid var(--blanco); /* L411: marco blanco original */
+  z-index: 2; /* L412: por encima de la decoración */
+} /* L413: cierra slider */
+.mini-slider .slides { /* L414: pila de fotos */
+  height: 420px; /* L415: altura del slider pequeño */
+} /* L416: cierra pila */
+.slider-nav { /* L417: controles del slider pequeño */
+  position: absolute; /* L418: flotan bajo la foto */
+  bottom: -45px; /* L419: posición original */
+  right: 0; /* L420: alineados a la derecha */
+  display: flex; /* L421: flechas y contador en fila */
+  align-items: center; /* L422: centrados verticalmente */
+  gap: 10px; /* L423: separación */
+} /* L424: cierra controles */
+.slider-nav button { /* L425: flechas */
+  color: var(--gris); /* L426: gris original */
+  font-size: 20px; /* L427: tamaño de la flecha */
+  transition: color .2s; /* L428: animación de hover */
+} /* L429: cierra flechas */
+.slider-nav button:hover { /* L430: hover de flechas */
+  color: var(--azul); /* L431: pasan a azul */
+} /* L432: cierra hover */
+.slider-counter { /* L433: contador 01 / 06 */
+  font-family: Arial, sans-serif; /* L434: tipografía original */
+  font-size: 16px; /* L435: tamaño original */
+  color: var(--gris); /* L436: color gris */
+} /* L437: cierra contador */
+.slider-counter b { /* L438: número actual */
+  font-weight: 500; /* L439: peso original */
+} /* L440: cierra número */
+.sedes-list h3 { /* L441: título "Sedes :" */
+  font-family: Arial, sans-serif; /* L442: tipografía original */
+  font-size: 20px; /* L443: tamaño original */
+  line-height: 24px; /* L444: interlineado original */
+  font-weight: 500; /* L445: peso original */
+  color: var(--gris); /* L446: gris original */
+  margin-bottom: 0; /* L447: el separador aporta el espacio */
+} /* L448: cierra título */
+.divider { /* L449: línea separadora */
+  width: 62%; /* L450: ancho original */
+  height: 1px; /* L451: grosor de la línea */
+  background: var(--linea); /* L452: color original */
+  margin: 20px 0 35px; /* L453: márgenes originales */
+} /* L454: cierra separador */
+.sedes-list ul { /* L455: lista de sedes */
+  list-style: none; /* L456: sin viñetas */
+} /* L457: cierra lista */
+.sedes-list li { /* L458: cada sede */
+  margin-bottom: 8px; /* L459: separación entre líneas */
+} /* L460: cierra elemento */
+.sedes-list li a { /* L461: enlace de cada sede */
+  font-family: Arial, sans-serif; /* L462: tipografía original */
+  font-size: 20px; /* L463: tamaño original */
+  font-weight: 600; /* L464: negrita original */
+  line-height: 24px; /* L465: interlineado original */
+  color: #11212d; /* L466: color oscuro original */
+  transition: color .2s; /* L467: animación */
+} /* L468: cierra enlace */
+.sedes-list li a:hover { /* L469: hover de sedes */
+  color: var(--azul); /* L470: pasa a azul */
+} /* L471: cierra hover */
+
+/* L472: PIE DE PÁGINA */
+.site-bottom { /* L473: pie azul */
+  background: var(--azul-medio); /* L474: color original #2058A5 */
+  color: #9aa9b5; /* L475: texto gris claro original */
+  font-family: Arial, sans-serif; /* L476: tipografía original del pie */
+  padding-top: 50px; /* L477: padding superior original */
+} /* L478: cierra pie */
+.bottom-grid { /* L479: rejilla de contacto */
+  display: grid; /* L480: activa Grid */
+  grid-template-columns: repeat(3, 1fr); /* L481: tres columnas */
+  gap: 40px; /* L482: separación */
+  padding-bottom: 40px; /* L483: espacio antes de la franja inferior */
+} /* L484: cierra rejilla */
+.bottom-col { /* L485: columna de contacto */
+  display: flex; /* L486: icono y texto en fila */
+  gap: 15px; /* L487: separación */
+  align-items: flex-start; /* L488: alinea arriba */
+} /* L489: cierra columna */
+.bottom-col svg { /* L490: iconos del pie */
+  width: 26px; /* L491: ancho */
+  height: 26px; /* L492: alto */
+  fill: var(--blanco); /* L493: relleno blanco */
+  flex: 0 0 auto; /* L494: que no se encojan */
+} /* L495: cierra iconos */
+.bottom-col p { /* L496: textos de contacto */
+  font-size: 15px; /* L497: tamaño legible */
+  line-height: 1.8; /* L498: interlineado */
+} /* L499: cierra textos */
+.bottom-bar { /* L500: franja inferior */
+  background: var(--azul-oscuro); /* L501: color original #1E5198 */
+  padding: 25px 0; /* L502: altura aproximada a los 84px originales */
+} /* L503: cierra franja */
+.bar-inner { /* L504: contenido de la franja */
+  display: flex; /* L505: copyright y menú en fila */
+  align-items: center; /* L506: centrados */
+  justify-content: space-between; /* L507: separados a los extremos */
+  gap: 20px; /* L508: separación mínima */
+  flex-wrap: wrap; /* L509: pueden pasar a otra línea */
+} /* L510: cierra contenido */
+.bar-inner small { /* L511: texto de copyright */
+  font-size: 13px; /* L512: tamaño pequeño */
+} /* L513: cierra copyright */
+.bar-inner nav { /* L514: menú del pie */
+  display: flex; /* L515: enlaces en fila */
+  flex-wrap: wrap; /* L516: pueden envolver */
+  gap: 16px; /* L517: separación */
+} /* L518: cierra menú */
+.bar-inner nav a { /* L519: enlaces del pie */
+  font-size: 13px; /* L520: tamaño */
+  transition: color .2s; /* L521: animación */
+} /* L522: cierra enlaces */
+.bar-inner nav a:hover { /* L523: hover de enlaces del pie */
+  color: var(--blanco); /* L524: se aclaran */
+} /* L525: cierra hover */
+
+/* L526: MODAL */
+.modal { /* L527: ventana de imagen ampliada */
+  position: fixed; /* L528: cubre toda la pantalla */
+  inset: 0; /* L529: de borde a borde */
+  z-index: 200; /* L530: por encima de todo */
+  background: rgba(10,25,40,.88); /* L531: fondo oscuro semitransparente */
+  display: grid; /* L532: centra la imagen */
+  place-items: center; /* L533: centrado */
+  padding: 40px; /* L534: margen interior */
+} /* L535: cierra modal */
+.modal[hidden] { /* L536: cuando tiene el atributo hidden */
+  display: none; /* L537: no se muestra */
+} /* L538: cierra hidden */
+.modal img { /* L539: imagen del modal */
+  max-width: 100%; /* L540: no desborda */
+  max-height: 85vh; /* L541: cabe en la pantalla */
+  border: 8px solid var(--blanco); /* L542: marco blanco */
+} /* L543: cierra imagen */
+.modal-close { /* L544: botón de cierre */
+  position: absolute; /* L545: en una esquina */
+  top: 20px; /* L546: separación superior */
+  right: 25px; /* L547: separación derecha */
+  color: var(--blanco); /* L548: color blanco */
+  font-size: 38px; /* L549: tamaño grande */
+  line-height: 1; /* L550: ajuste de línea */
+} /* L551: cierra botón de cierre */
+
+/* L552: MEDIA QUERIES: reproducen los breakpoints del sitio original */
+@media (max-width: 1199.98px) { /* L553: tablet horizontal */
+  .container { max-width: 960px; } /* L554: contenedor más estrecho */
+  .hero { height: 700px; } /* L555: altura original para pantallas medianas */
+  .slider-dots { right: 50px; } /* L556: los puntos se acercan al borde */
+  .slide-title { font-size: 40px; line-height: 55px; } /* L557: título más pequeño */
+  .slide-photo { width: 320px; height: 320px; } /* L558: foto circular más pequeña */
+  .history-decor { display: none; } /* L559: se oculta la foto decorativa */
+  .mission-copy { padding-right: 10%; } /* L560: se aprovecha mejor el ancho */
+} /* L561: cierra tablet horizontal */
+
+@media (max-width: 991.98px) { /* L562: tablet vertical */
+  .menu-toggle { display: block; } /* L563: aparece la hamburguesa */
+  .main-nav { /* L564: menú como panel lateral */
+    position: fixed; /* L565: se fija a la pantalla */
+    top: 80px; /* L566: debajo de la cabecera */
+    right: 0; /* L567: pegado al borde derecho */
+    bottom: 0; /* L568: hasta abajo */
+    width: 280px; /* L569: ancho del panel */
+    padding: 30px 20px; /* L570: espacio interior */
+    background: var(--blanco); /* L571: fondo blanco */
+    box-shadow: -4px 0 18px rgba(17,33,45,.18); /* L572: sombra */
+    transform: translateX(100%); /* L573: fuera de pantalla por defecto */
+    transition: transform .3s ease; /* L574: animación de entrada */
+    overflow-y: auto; /* L575: scroll si el menú es largo */
+  } /* L576: cierra menú móvil */
+  .main-nav.is-open { transform: translateX(0); } /* L577: menú abierto */
+  .menu { flex-direction: column; align-items: flex-start; gap: 18px; } /* L578: enlaces apilados */
+  .submenu { /* L579: desplegable dentro del panel */
+    position: static; /* L580: ya no flota */
+    min-width: 0; /* L581: ocupa el ancho disponible */
+    box-shadow: none; /* L582: sin sombra */
+    padding-left: 12px; /* L583: sangría */
+  } /* L584: cierra desplegable móvil */
+  .hero { height: 700px; } /* L585: mantiene la altura media */
+  .mission-grid { grid-template-columns: 1fr; } /* L586: una sola columna */
+  .mission-copy { padding-right: 0; margin-bottom: 40px; } /* L587: texto a ancho completo */
+  .mission-visual { min-height: 460px; } /* L588: ajusta la altura del collage */
+  .mission-main { width: 85%; min-height: 350px; } /* L589: foto más ancha */
+  .mission-accent { display: none; } /* L590: oculta la foto pequeña */
+  .mission-overlap { left: 0; top: 120px; width: 42%; height: 210px; } /* L591: recoloca la foto superpuesta */
+  .history-grid { grid-template-columns: 1fr; gap: 70px; } /* L592: apila imagen y listado */
+  .history-head p { width: 80%; } /* L593: párrafo más ancho */
+} /* L594: cierra tablet vertical */
+
+@media (max-width: 767.98px) { /* L595: celular */
+  body { font-size: 14px; } /* L596: texto base más pequeño */
+  .hero { height: 400px; } /* L597: altura original en móvil */
+  .slide-title { font-size: 30px; line-height: 35px; } /* L598: título original en móvil */
+  .slide-photo { width: 180px; height: 180px; border-width: 4px; margin: 8px 0 14px; } /* L599: foto circular pequeña */
+  .slide-logo { max-width: 60%; } /* L600: logo más pequeño */
+  .slide-button { padding: 14px 30px; font-size: 12px; } /* L601: botón compacto */
+  .slider-dots { right: 10px; gap: 8px; } /* L602: puntos cerca del borde */
+  .slider-dots button { width: 10px; height: 10px; } /* L603: puntos más pequeños */
+  .anniversary, .videos { padding: 45px 0; } /* L604: menos espacio vertical */
+  .anniversary h1, .history-head h2, .mission-copy h3 { font-size: 28px; line-height: 36px; } /* L605: títulos reducidos */
+  .video-grid { grid-template-columns: 1fr; } /* L606: videos apilados */
+  .mission { padding: 60px 0 100px; } /* L607: menos padding */
+  .mission-visual { min-height: 340px; } /* L608: collage más bajo */
+  .mission-main { min-height: 250px; width: 90%; } /* L609: foto principal */
+  .mission-overlap { top: 80px; width: 45%; height: 150px; border-width: 8px; } /* L610: foto superpuesta */
+  .history { padding: 40px 0 80px; } /* L611: menos padding */
+  .history-head p { width: 100%; } /* L612: párrafo a ancho completo */
+  .mini-slider .slides { height: 260px; } /* L613: slider más bajo */
+  .mini-slider { border-width: 12px; } /* L614: marco más fino */
+  .bottom-grid { grid-template-columns: 1fr; gap: 25px; } /* L615: contacto apilado */
+  .bar-inner { flex-direction: column; align-items: flex-start; } /* L616: copyright y menú apilados */
+} /* L617: cierra celular */
+
+@media (max-width: 575.98px) { /* L618: celular pequeño */
+  .brand img { height: 55px; } /* L619: logo más bajo */
+  .slide-title { font-size: 26px; } /* L620: título aún más pequeño */
+  .slide-photo { width: 140px; height: 140px; } /* L621: foto circular reducida */
+  .slide-button { font-size: 11px; } /* L622: texto del botón reducido */
+  .sedes-list li a { font-size: 17px; } /* L623: lista de sedes más compacta */
+} /* L624: cierra celular pequeño */
+
+@media (min-width: 1400px) { /* L625: pantallas grandes */
+  .container { max-width: 1320px; } /* L626: ancho máximo original para grandes pantallas */
+} /* L627: cierra pantallas grandes */
+
+/* L628: estilos compartidos por las páginas internas del clon */
+.page-hero { /* L629: cabecera azul de cada página interna */ position: relative; /* L630: permite colocar el logo decorativo */ padding: 76px 0 64px; /* L631: espacio vertical bajo la barra fija */ background: linear-gradient(120deg, var(--azul-oscuro), var(--azul)); /* L632: degradado con la paleta original */ color: var(--blanco); /* L633: texto blanco sobre el azul */ overflow: hidden; /* L634: recorta el logo decorativo */ } /* L635: cierra la cabecera */
+.page-hero::after { /* L636: círculo decorativo tenue */ content: ""; /* L637: contenido vacío */ position: absolute; /* L638: se coloca dentro de la cabecera */ width: 320px; /* L639: ancho del círculo */ height: 320px; /* L640: alto del círculo */ right: -90px; /* L641: sale parcialmente por la derecha */ top: -120px; /* L642: sale parcialmente por arriba */ border: 40px solid rgba(255,255,255,.08); /* L643: borde grueso semitransparente */ border-radius: 50%; /* L644: forma circular */ } /* L645: cierra el círculo */
+.page-hero .container { /* L646: contenido por encima del círculo */ position: relative; /* L647: crea contexto de apilamiento */ z-index: 1; /* L648: se dibuja delante de la decoración */ } /* L649: cierra el contenedor */
+.breadcrumb { /* L650: migas de pan */ font-size: 13px; /* L651: texto pequeño */ margin-bottom: 14px; /* L652: separación del título */ opacity: .85; /* L653: tono más suave */ } /* L654: cierra migas */
+.breadcrumb a { /* L655: enlaces de las migas */ border-bottom: 1px solid rgba(255,255,255,.5); /* L656: subrayado tenue */ } /* L657: cierra enlaces */
+.page-hero h1 { /* L658: título principal de la página */ font-size: 44px; /* L659: tamaño escritorio */ line-height: 52px; /* L660: interlineado */ margin-bottom: 14px; /* L661: separación del resumen */ } /* L662: cierra título */
+.page-hero p { /* L663: resumen bajo el título */ max-width: 720px; /* L664: ancho legible */ font-size: 17px; /* L665: tamaño de lectura */ color: rgba(255,255,255,.92); /* L666: blanco ligeramente atenuado */ } /* L667: cierra resumen */
+.page-hero-logo { /* L668: logo grande y translúcido a la derecha */ position: absolute; /* L669: se sitúa dentro de la cabecera */ right: 40px; /* L670: separación del borde */ top: 50%; /* L671: centrado vertical */ transform: translateY(-50%); /* L672: ajusta el centrado */ width: 210px; /* L673: ancho del logo */ opacity: .14; /* L674: muy tenue para no distraer */ } /* L675: cierra logo decorativo */
+.section { /* L676: sección genérica de contenido */ padding: 70px 0; /* L677: espacio vertical amplio */ } /* L678: cierra sección */
+.section--gray { /* L679: variante con fondo gris claro */ background: #f4f7fb; /* L680: mismo gris de las tablas del PDF */ } /* L681: cierra variante */
+.section-head { /* L682: cabecera de una sección */ max-width: 760px; /* L683: ancho legible */ margin-bottom: 36px; /* L684: separación del contenido */ } /* L685: cierra cabecera */
+.section-head h2 { /* L686: título de sección */ font-size: 34px; /* L687: tamaño escritorio */ line-height: 42px; /* L688: interlineado */ color: var(--azul); /* L689: azul institucional */ margin-bottom: 12px; /* L690: separación del párrafo */ } /* L691: cierra título */
+.section-head p { /* L692: párrafo de presentación */ color: var(--gris); /* L693: gris del original */ font-size: 16px; /* L694: tamaño base */ } /* L695: cierra párrafo */
+.intro-grid { /* L696: rejilla de imagen y texto */ display: grid; /* L697: usa CSS Grid */ grid-template-columns: 5fr 7fr; /* L698: imagen más estrecha que el texto */ gap: 50px; /* L699: separación entre columnas */ align-items: center; /* L700: centra verticalmente */ } /* L701: cierra rejilla */
+.intro-grid img { /* L702: foto principal de la sección */ width: 100%; /* L703: ocupa su columna */ border-radius: 6px; /* L704: esquinas suaves */ box-shadow: 0 12px 30px rgba(17,33,45,.14); /* L705: sombra ligera */ } /* L706: cierra foto */
+.intro-copy h3 { /* L707: subtítulo dentro del texto */ color: var(--azul-oscuro); /* L708: azul más oscuro */ font-size: 24px; /* L709: tamaño medio */ margin-bottom: 14px; /* L710: separación */ } /* L711: cierra subtítulo */
+.intro-copy p { /* L712: párrafos del texto */ color: var(--gris); /* L713: gris institucional */ margin-bottom: 14px; /* L714: separación entre párrafos */ } /* L715: cierra párrafos */
+.feature-grid { /* L716: rejilla de tarjetas de servicios */ display: grid; /* L717: usa Grid */ grid-template-columns: repeat(3, 1fr); /* L718: tres columnas iguales */ gap: 24px; /* L719: separación */ } /* L720: cierra rejilla */
+.feature-card { /* L721: tarjeta de servicio o fundamento */ background: var(--blanco); /* L722: fondo blanco */ border: 1px solid var(--linea); /* L723: borde fino */ border-top: 4px solid var(--naranja); /* L724: franja naranja superior */ border-radius: 4px; /* L725: esquinas suaves */ padding: 28px; /* L726: espacio interior */ } /* L727: cierra tarjeta */
+.feature-icon { /* L728: círculo con la inicial del servicio */ width: 46px; /* L729: ancho */ height: 46px; /* L730: alto */ border-radius: 50%; /* L731: forma circular */ background: var(--azul); /* L732: fondo azul */ color: var(--blanco); /* L733: letra blanca */ display: grid; /* L734: centra con Grid */ place-items: center; /* L735: centra en ambos ejes */ font-weight: 700; /* L736: negrita */ margin-bottom: 16px; /* L737: separación */ } /* L738: cierra icono */
+.feature-card h3 { /* L739: título de la tarjeta */ font-size: 20px; /* L740: tamaño */ color: var(--azul); /* L741: azul */ margin-bottom: 10px; /* L742: separación */ } /* L743: cierra título */
+.feature-card p { /* L744: texto de la tarjeta */ font-size: 15px; /* L745: tamaño pequeño */ color: var(--gris); /* L746: gris */ } /* L747: cierra texto */
+.text-columns { /* L748: texto a dos columnas */ columns: 2; /* L749: dos columnas como un periódico */ column-gap: 40px; /* L750: espacio entre columnas */ color: var(--gris); /* L751: gris */ } /* L752: cierra columnas */
+.text-columns p { /* L753: párrafo dentro de las columnas */ margin-bottom: 16px; /* L754: separación */ break-inside: avoid; /* L755: evita partir el párrafo */ } /* L756: cierra párrafo */
+.info-grid { /* L757: rejilla de datos institucionales */ display: grid; /* L758: usa Grid */ grid-template-columns: repeat(2, 1fr); /* L759: dos columnas */ gap: 20px; /* L760: separación */ } /* L761: cierra rejilla */
+.info-item { /* L762: bloque de información */ border-left: 4px solid var(--azul); /* L763: franja azul izquierda */ padding: 6px 0 6px 18px; /* L764: sangría */ } /* L765: cierra bloque */
+.info-item h3 { /* L766: título del bloque */ color: var(--azul-oscuro); /* L767: azul oscuro */ font-size: 17px; /* L768: tamaño */ margin-bottom: 6px; /* L769: separación */ } /* L770: cierra título */
+.info-item p { /* L771: texto del bloque */ font-size: 15px; /* L772: tamaño */ color: var(--gris); /* L773: gris */ } /* L774: cierra texto */
+.partner-grid { /* L775: rejilla de alianzas */ display: grid; /* L776: usa Grid */ grid-template-columns: repeat(3, 1fr); /* L777: tres columnas */ gap: 24px; /* L778: separación */ } /* L779: cierra rejilla */
+.partner-card { /* L780: tarjeta de aliado */ background: var(--blanco); /* L781: fondo blanco */ border: 1px solid var(--linea); /* L782: borde fino */ border-radius: 4px; /* L783: esquinas suaves */ padding: 26px; /* L784: espacio interior */ display: flex; /* L785: flexible para repartir altura */ flex-direction: column; /* L786: elementos en columna */ gap: 12px; /* L787: separación */ } /* L788: cierra tarjeta */
+.partner-badge { /* L789: placeholder del logo del aliado */ height: 60px; /* L790: altura fija */ display: grid; /* L791: centra con Grid */ place-items: center; /* L792: centra en ambos ejes */ background: var(--linea); /* L793: fondo gris claro */ color: var(--azul); /* L794: texto azul */ font-weight: 700; /* L795: negrita */ border-radius: 4px; /* L796: esquinas suaves */ } /* L797: cierra placeholder */
+.partner-card h3 { /* L798: nombre del aliado */ font-size: 17px; /* L799: tamaño */ color: var(--azul); /* L800: azul */ } /* L801: cierra nombre */
+.partner-card p { /* L802: descripción del aliado */ font-size: 14px; /* L803: tamaño */ color: var(--gris); /* L804: gris */ flex: 1; /* L805: ocupa el espacio restante */ } /* L806: cierra descripción */
+.partner-card a { /* L807: enlace a la sede relacionada */ color: var(--naranja); /* L808: naranja */ font-weight: 700; /* L809: negrita */ } /* L810: cierra enlace */
+.gallery-grid { /* L811: rejilla de álbumes */ display: grid; /* L812: usa Grid */ grid-template-columns: repeat(3, 1fr); /* L813: tres columnas */ gap: 24px; /* L814: separación */ } /* L815: cierra rejilla */
+.gallery-card { /* L816: tarjeta de álbum */ position: relative; /* L817: permite colocar la leyenda encima */ overflow: hidden; /* L818: recorta la imagen al hacer zoom */ border-radius: 4px; /* L819: esquinas suaves */ cursor: pointer; /* L820: cursor de mano */ background: var(--azul); /* L821: fondo de respaldo */ } /* L822: cierra tarjeta */
+.gallery-card img { /* L823: foto del álbum */ width: 100%; /* L824: ancho completo */ height: 220px; /* L825: altura uniforme */ object-fit: cover; /* L826: recorta sin deformar */ transition: transform .4s ease; /* L827: animación suave */ } /* L828: cierra foto */
+.gallery-card:hover img { /* L829: zoom al pasar el ratón */ transform: scale(1.06); /* L830: aumenta ligeramente */ } /* L831: cierra hover */
+.gallery-caption { /* L832: leyenda sobre la foto */ position: absolute; /* L833: se coloca sobre la imagen */ inset: auto 0 0; /* L834: pegada abajo */ padding: 18px; /* L835: espacio interior */ background: linear-gradient(transparent, rgba(0,0,0,.82)); /* L836: degradado para leer */ color: var(--blanco); /* L837: texto blanco */ } /* L838: cierra leyenda */
+.gallery-caption strong { /* L839: nombre del álbum */ display: block; /* L840: va en su propia línea */ font-size: 18px; /* L841: tamaño */ } /* L842: cierra nombre */
+.gallery-caption span { /* L843: número de fotos */ font-size: 13px; /* L844: tamaño pequeño */ opacity: .85; /* L845: tono suave */ } /* L846: cierra número */
+.contact-grid { /* L847: rejilla de la página de contacto */ display: grid; /* L848: usa Grid */ grid-template-columns: 4fr 8fr; /* L849: datos estrechos, formulario ancho */ gap: 50px; /* L850: separación */ } /* L851: cierra rejilla */
+.contact-details { /* L852: lista de datos de contacto */ display: grid; /* L853: usa Grid */ gap: 22px; /* L854: separación */ } /* L855: cierra lista */
+.contact-detail { /* L856: un dato de contacto */ display: flex; /* L857: icono y texto en fila */ gap: 14px; /* L858: separación */ align-items: flex-start; /* L859: alinea arriba */ } /* L860: cierra dato */
+.contact-dot { /* L861: círculo del icono */ width: 38px; /* L862: ancho */ height: 38px; /* L863: alto */ flex: none; /* L864: no se encoge */ border-radius: 50%; /* L865: circular */ background: var(--azul); /* L866: fondo azul */ color: var(--blanco); /* L867: icono blanco */ display: grid; /* L868: centra con Grid */ place-items: center; /* L869: centra en ambos ejes */ } /* L870: cierra círculo */
+.contact-detail h3 { /* L871: título del dato */ color: var(--azul); /* L872: azul */ font-size: 16px; /* L873: tamaño */ margin-bottom: 4px; /* L874: separación */ } /* L875: cierra título */
+.contact-detail p { /* L876: valor del dato */ color: var(--gris); /* L877: gris */ font-size: 15px; /* L878: tamaño */ } /* L879: cierra valor */
+.form-card { /* L880: tarjeta del formulario */ background: #f4f7fb; /* L881: fondo gris claro */ padding: 34px; /* L882: espacio interior */ border-radius: 6px; /* L883: esquinas suaves */ } /* L884: cierra tarjeta */
+.form-row { /* L885: fila de dos campos */ display: grid; /* L886: usa Grid */ grid-template-columns: 1fr 1fr; /* L887: dos columnas */ gap: 18px; /* L888: separación */ } /* L889: cierra fila */
+.field { /* L890: grupo etiqueta + control */ margin-bottom: 18px; /* L891: separación */ } /* L892: cierra grupo */
+.field label { /* L893: etiqueta del campo */ display: block; /* L894: va encima del control */ font-size: 13px; /* L895: tamaño pequeño */ font-weight: 700; /* L896: negrita */ color: var(--azul-oscuro); /* L897: azul oscuro */ margin-bottom: 6px; /* L898: separación */ } /* L899: cierra etiqueta */
+.field input, .field textarea, .field select { /* L900: controles del formulario */ width: 100%; /* L901: ancho completo */ padding: 12px 14px; /* L902: espacio interior */ border: 1px solid var(--linea); /* L903: borde fino */ border-radius: 4px; /* L904: esquinas suaves */ font: inherit; /* L905: misma tipografía */ color: var(--texto); /* L906: color del texto */ background: var(--blanco); /* L907: fondo blanco */ } /* L908: cierra controles */
+.field textarea { /* L909: área de mensaje */ min-height: 140px; /* L910: altura mínima */ resize: vertical; /* L911: permite estirarla hacia abajo */ } /* L912: cierra área */
+.btn-submit { /* L913: botón de enviar */ background: var(--azul); /* L914: fondo azul */ color: var(--blanco); /* L915: texto blanco */ padding: 14px 30px; /* L916: espacio interior */ border-radius: 4px; /* L917: esquinas suaves */ font-weight: 700; /* L918: negrita */ } /* L919: cierra botón */
+.btn-submit:hover { /* L920: hover del botón */ background: var(--naranja); /* L921: pasa a naranja */ } /* L922: cierra hover */
+.form-message { /* L923: aviso tras enviar */ display: none; /* L924: oculto por defecto */ margin-top: 16px; /* L925: separación */ padding: 12px 14px; /* L926: espacio interior */ background: #e7f4ea; /* L927: fondo verde claro */ color: #1b6b35; /* L928: texto verde */ border-left: 4px solid #2e9e52; /* L929: franja verde */ } /* L930: cierra aviso */
+.form-message.is-visible { /* L931: clase que añade JavaScript */ display: block; /* L932: hace visible el aviso */ } /* L933: cierra estado */
+.sede-index { /* L934: rejilla de enlaces a sedes */ display: grid; /* L935: usa Grid */ grid-template-columns: repeat(2, 1fr); /* L936: dos columnas */ gap: 14px; /* L937: separación */ } /* L938: cierra rejilla */
+.sede-index a { /* L939: enlace a una sede */ display: block; /* L940: ocupa toda la celda */ padding: 16px 18px; /* L941: espacio interior */ background: var(--blanco); /* L942: fondo blanco */ border: 1px solid var(--linea); /* L943: borde fino */ border-left: 4px solid var(--azul); /* L944: franja azul */ color: var(--azul); /* L945: texto azul */ font-weight: 700; /* L946: negrita */ } /* L947: cierra enlace */
+.sede-index a:hover { /* L948: hover del enlace */ background: var(--naranja); /* L949: fondo naranja */ color: var(--blanco); /* L950: texto blanco */ } /* L951: cierra hover */
+.cta-band { /* L952: franja final de llamada a la acción */ background: var(--azul-medio); /* L953: azul del pie */ color: var(--blanco); /* L954: texto blanco */ padding: 46px 0; /* L955: espacio vertical */ text-align: center; /* L956: centrado */ } /* L957: cierra franja */
+.cta-band h2 { /* L958: título de la franja */ font-size: 30px; /* L959: tamaño */ margin-bottom: 18px; /* L960: separación */ } /* L961: cierra título */
+.cta-band a { /* L962: botón de la franja */ display: inline-block; /* L963: se comporta como bloque en línea */ background: var(--naranja); /* L964: fondo naranja */ color: var(--blanco); /* L965: texto blanco */ padding: 13px 28px; /* L966: espacio interior */ border-radius: 4px; /* L967: esquinas suaves */ font-weight: 700; /* L968: negrita */ } /* L969: cierra botón */
+.back-link { /* L970: enlace de volver */ display: inline-block; /* L971: se comporta como bloque en línea */ margin-bottom: 18px; /* L972: separación */ color: var(--naranja); /* L973: naranja */ font-weight: 700; /* L974: negrita */ } /* L975: cierra enlace */
+.main-nav a.is-active, .bar-inner a.is-active { /* L976: resalta el enlace de la página actual */ color: var(--naranja); /* L977: naranja */ } /* L978: cierra resaltado */
+
+@media (max-width: 991.98px) { /* L979: ajustes para tablet */
+  .page-hero h1 { font-size: 36px; line-height: 44px; } /* L980: título más bajo */
+  .intro-grid, .contact-grid { grid-template-columns: 1fr; gap: 30px; } /* L981: una sola columna */
+  .feature-grid, .partner-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); } /* L982: dos columnas */
+  .text-columns { columns: 1; } /* L983: texto a una columna */
+} /* L984: cierra tablet */
+
+@media (max-width: 767.98px) { /* L985: ajustes para celular */
+  .page-hero { padding: 54px 0 46px; } /* L986: menos espacio vertical */
+  .page-hero h1 { font-size: 30px; line-height: 38px; } /* L987: título compacto */
+  .page-hero p { font-size: 15px; } /* L988: resumen más pequeño */
+  .page-hero-logo { display: none; } /* L989: oculta el logo decorativo */
+  .section { padding: 48px 0; } /* L990: menos espacio */
+  .section-head h2 { font-size: 27px; line-height: 34px; } /* L991: título de sección reducido */
+  .feature-grid, .partner-grid, .gallery-grid, .info-grid, .sede-index { grid-template-columns: 1fr; } /* L992: todo a una columna */
+  .form-row { grid-template-columns: 1fr; gap: 0; } /* L993: campos apilados */
+  .form-card { padding: 22px; } /* L994: tarjeta más compacta */
+  .cta-band h2 { font-size: 24px; } /* L995: título de la franja reducido */
+} /* L996: cierra celular */

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Verificar PDF</title></head>
+<body>
+<input id="archivo" type="file" accept="application/pdf">
+<pre id="resultado">Esperando archivo...</pre>
+<script>
+document.getElementById('archivo').addEventListener('change', async function () {
+  const f = this.files[0];
+  const buf = await f.slice(0, 1024).arrayBuffer();
+  const bytes = new Uint8Array(buf);
+  const texto = new TextDecoder('latin1').decode(bytes);
+  document.getElementById('resultado').textContent = JSON.stringify({
+    nombre: f.name,
+    tamano: f.size,
+    cabecera: texto.slice(0, 20),
+    tieneEOF: texto.includes('%%EOF') || f.size > 1024,
+    paginas: (texto.match(/\/Type \/Page\b/g) || []).length
+  });
+});
+</script>
+</body>
+</html>

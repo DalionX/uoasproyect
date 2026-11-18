@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396 164" role="img" aria-label="Unión de Obras de Asistencia Social">
+  <!-- Fondo transparente: el SVG se adapta a cualquier color de cabecera -->
+  <g fill="none" fill-rule="evenodd">
+    <!-- Emblema: círculo azul con una estrella naranja, diseño original -->
+    <circle cx="62" cy="82" r="52" fill="#0560A9"/>
+    <circle cx="62" cy="82" r="42" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M62 46 L70 70 L96 70 L75 85 L83 110 L62 95 L41 110 L49 85 L28 70 L54 70 Z" fill="#F4971B"/>
+  </g>
+  <!-- Texto institucional, creado con tipografía del sistema (sin derechos de terceros) -->
+  <text x="132" y="62" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0560A9">UOAS</text>
+  <text x="132" y="92" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#185587">UNIÓN DE OBRAS DE</text>
+  <text x="132" y="112" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#185587">ASISTENCIA SOCIAL</text>
+  <!-- Línea decorativa naranja -->
+  <rect x="132" y="124" width="150" height="4" rx="2" fill="#F4971B"/>
+</svg>
